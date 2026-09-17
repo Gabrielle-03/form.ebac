@@ -54,15 +54,13 @@ $(document).ready(function() {
                 $(botao).find('span').addClass('d-none');
             }, 1000);
         })
+    })
 
-        $('#formulario-pedido').submit(function(evento) {
-            evento.preventDefault();
+    $('#formulario-pedido').submit(function(evento) {
+        evento.preventDefault();
 
-            if ($('#nome').val().length == 0) {
-                throw new Error('Digite o nome');
-            }
-
-            alert('Prevenção está funcionando')
-        })
+        if ($('#nome').val().length == 0) {
+            throw new Error('Digite o nome');
+        }
     })
 })
